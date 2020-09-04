@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="PxUsage">
+
+    <VideoView
+        android:id="@+id/activity_main_vv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/activity_main_version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="44px"
+        android:layout_marginBottom="120px"
+        android:background="@drawable/activity_splash_version_bg"
+        android:gravity="center"
+        android:lines="1"
+        android:paddingLeft="24px"
+        android:paddingRight="24px"
+        android:text="@string/version"
+        android:textColor="#66FFFFFF"
+        android:textSize="28px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="v1.1.0Beta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

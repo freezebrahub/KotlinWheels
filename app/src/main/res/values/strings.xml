@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KotlinDemo</string>
+    <string name="version">v1.1.0Beta</string>
+</resources>
