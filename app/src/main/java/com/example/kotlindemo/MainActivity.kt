@@ -2,6 +2,10 @@ package com.example.kotlindemo
 
 import android.net.Uri
 import android.os.Bundle
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.AlphaAnimation
+import android.view.animation.AnimationUtils
+import android.view.animation.Interpolator
 import android.widget.TextView
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +25,15 @@ class MainActivity : AppCompatActivity() {
 
         setupAndPlayVideo()
         ScreenAdapter.getInstance(this).adaptionView(versionTv)
+
+        executeVersionTvAnimation()
+    }
+
+    private fun executeVersionTvAnimation() {
+        val animation = AlphaAnimation(0f, 1f)
+        animation.duration = 1500
+        animation.interpolator = AccelerateInterpolator()
+        versionTv.startAnimation(animation)
     }
 
     private fun setupAndPlayVideo() {
